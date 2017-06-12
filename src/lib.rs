@@ -36,3 +36,13 @@ macro_rules! static_assert {
         static_assert!(let $e; $($ee),*);
     );
 }
+
+#[cfg(test)]
+mod tests {
+    const _FOUR: i32 = 4;
+
+    #[test]
+    fn test_0() {
+        static_assert!(1 + 2 == { _FOUR - 1 }, 2 < 3);
+    }
+}
