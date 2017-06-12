@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/nodakai/rust-static_assert_macro.svg?branch=master)](https://travis-ci.org/nodakai/rust-static_assert_macro)
+
 # `static_assert` macro
 
 Cargo.toml:
