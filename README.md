@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/nodakai/rust-static_assert_macro.svg?branch=master)](https://travis-ci.org/nodakai/rust-static_assert_macro)
+[![Crates.io](https://img.shields.io/crates/v/static_assert_macro.svg)](https://crates.io/crates/static_assert_macro)
+[![license](https://img.shields.io/github/license/nodakai/rust-static_assert_macro.svg)](https://github.com/nodakai/rust-static_assert_macro/blob/master/LICENSE) 
 
 # `static_assert` macro
 
