@@ -25,7 +25,7 @@
 #[macro_export]
 macro_rules! static_assert {
     (let $e:expr; ) => (
-        type _ArrayForStaticAssert = [i8; 0 - ((false == ($e)) as usize)];
+        type _ArrayForStaticAssert = [i8; ($e) as usize - 1];
     );
 
     (let $e:expr; $e1:expr $(, $ee:expr)*) => (
@@ -33,7 +33,7 @@ macro_rules! static_assert {
     );
 
     ($e:expr $(, $ee:expr)*) => (
-        static_assert!(let $e; $($ee),*);
+        static_assert!(let true && ($e); $($ee),*);
     );
 }
 
@@ -44,5 +44,13 @@ mod tests {
     #[test]
     fn test_0() {
         static_assert!(1 + 2 == { _FOUR - 1 }, 2 < 3);
+    }
+    #[test]
+    fn test_1() {
+        static_assert!(true);
+    }
+    #[test]
+    fn test_2() {
+        // static_assert!(1); // should not compile
     }
 }
