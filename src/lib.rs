@@ -25,7 +25,7 @@
 #[macro_export]
 macro_rules! static_assert {
     (let $e:expr; ) => (
-        type _ArrayForStaticAssert = [i8; 0 - ((false == ($e)) as usize)];
+        type _ArrayForStaticAssert = [i8; ($e) as usize - 1];
     );
 
     (let $e:expr; $e1:expr $(, $ee:expr)*) => (
