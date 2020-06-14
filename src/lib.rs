@@ -11,8 +11,12 @@
 //!
 //! ## Example
 //! ```
+//! // Rust 2015 syntax
 //! #[macro_use]
 //! extern crate static_assert_macro;
+//!
+//! #[cfg(feature = "Rust 2018 syntax")]
+//! use static_assert_macro::static_assert;
 //!
 //! static_assert!(0 < 1, 1 < 2, 2 < 3);
 //!

@@ -7,14 +7,22 @@
 Cargo.toml:
 
     [dependencies]
-    static_assert_macro = "1.0.0"
+    static_assert_macro = "1"
 
-Your code:
+Your code (Rust 2018):
+
+    use static_assert_macro::static_assert;
+
+    static_assert!(1 < 2);
+
+    fn main() {
+        static_assert!(3 < 4, 10 < 10);
+    }
+
+For Rust 2015 code, replace `use static_assert_macro::static_assert;` with
 
     #[macro_use]
     extern crate static_assert_macro;
-    
-    static_assert!(1 < 2);
 
 For more details, visit
 

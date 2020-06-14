@@ -1,6 +1,6 @@
 [package]
 name = "static_assert_macro"
-version = "1.0.3"
+version = "1.0.4"
 authors = ["NODA, Kai <nodakai@gmail.com>"]
 description = "Library implementation of so-called `static_assert`"
 documentation = "https://nodakai.github.io/rust-static_assert_macro/static_assert_macro"
@@ -8,3 +8,4 @@ repository = "https://github.com/nodakai/rust-static_assert_macro"
 keywords = ["static_assert", "static", "assert"]
 readme = "README.md"
 license = "Apache-2.0"
+edition = "2015"
