@@ -2,12 +2,13 @@
 //! conditionally expands into an integer overflow, breaking the compilation.
 //!
 //! It can take one or more constant boolean expressions as its parameters.
-//! When you have multiple conditions to verify, pass them to a single
-//! invocation of this macro as multiple parameters.
 //!
-//! **You cannot invoke this macro more than once in a given scope.**
-//! This is because its implementation is based on a function definition and
-//! two or more invocations cause name collision.
+//! Prior to version 1.1, when you have multiple conditions to verify,
+//! you had to rely on the hack to pass them to a single invocation of the macro as multiple parameters
+//! because its implementation details prevented multiple invocations from coexisting in a single scope.
+//!
+//! **This limitation was removed in version 1.1**;
+//! you can now call this macro an arbitrary number of times in a given scope.
 //!
 //! ## Example
 //! ```
@@ -18,7 +19,9 @@
 //! #[cfg(feature = "Rust 2018 syntax")]
 //! use static_assert_macro::static_assert;
 //!
-//! static_assert!(0 < 1, 1 < 2, 2 < 3);
+//! static_assert!(0 < 1);
+//! static_assert!(1 < 2);
+//! static_assert!(2 < 3, true || false);
 //!
 //! fn main() {
 //!     const FOUR: i32 = 4;
@@ -29,7 +32,7 @@
 #[macro_export]
 macro_rules! static_assert {
     (let $e:expr; ) => (
-        fn _fn_for_static_assert(_: [i8; ($e) as usize - 1]) {}
+        const _: [(); { const ASSERT: bool = $e; ASSERT } as usize - 1] = [];
     );
 
     (let $e:expr; $e1:expr $(, $ee:expr)*) => (

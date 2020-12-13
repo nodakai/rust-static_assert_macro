@@ -1,6 +1,6 @@
 [package]
 name = "static_assert_macro"
-version = "1.0.4"
+version = "1.1.0"
 authors = ["NODA, Kai <nodakai@gmail.com>"]
 description = "Library implementation of so-called `static_assert`"
 documentation = "https://nodakai.github.io/rust-static_assert_macro/static_assert_macro"

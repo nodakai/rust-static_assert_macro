@@ -16,7 +16,8 @@ Your code (Rust 2018):
     static_assert!(1 < 2);
 
     fn main() {
-        static_assert!(3 < 4, 10 < 10);
+        static_assert!(3 < 4);
+        static_assert!(10 < 10); // build failure
     }
 
 For Rust 2015 code, replace `use static_assert_macro::static_assert;` with
