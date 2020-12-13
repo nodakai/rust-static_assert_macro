@@ -1,6 +1,6 @@
 [![Continuous integration](https://github.com/nodakai/rust-static_assert_macro/workflows/Continuous%20integration/badge.svg)](https://github.com/nodakai/rust-static_assert_macro/actions)
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![Crates.io](https://img.shields.io/crates/v/static_assert_macro.svg)](https://crates.io/crates/static_assert_macro)
 [![docs.rs](https://docs.rs/static_assert_macro/badge.svg)](https://docs.rs/static_assert_macro/)
@@ -55,6 +55,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/Boscop"><img src="https://avatars1.githubusercontent.com/u/535593?v=4" width="100px;" alt=""/><br /><sub><b>Boscop</b></sub></a><br /><a href="https://github.com/nodakai/rust-static_assert_macro/commits?author=Boscop" title="Code">💻</a></td>
     <td align="center"><a href="https://stbuehler.de"><img src="https://avatars1.githubusercontent.com/u/528446?v=4" width="100px;" alt=""/><br /><sub><b>Stefan Bühler</b></sub></a><br /><a href="https://github.com/nodakai/rust-static_assert_macro/issues?q=author%3Astbuehler" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/BenWiederhake"><img src="https://avatars3.githubusercontent.com/u/2690845?v=4" width="100px;" alt=""/><br /><sub><b>Ben Wiederhake</b></sub></a><br /><a href="https://github.com/nodakai/rust-static_assert_macro/commits?author=BenWiederhake" title="Code">💻</a></td>
   </tr>
 </table>
 
