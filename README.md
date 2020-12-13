@@ -1,4 +1,7 @@
 [![Continuous integration](https://github.com/nodakai/rust-static_assert_macro/workflows/Continuous%20integration/badge.svg)](https://github.com/nodakai/rust-static_assert_macro/actions)
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 [![Crates.io](https://img.shields.io/crates/v/static_assert_macro.svg)](https://crates.io/crates/static_assert_macro)
 [![docs.rs](https://docs.rs/static_assert_macro/badge.svg)](https://docs.rs/static_assert_macro/)
 [![license](https://img.shields.io/github/license/nodakai/rust-static_assert_macro.svg)](LICENSE) 
@@ -40,3 +43,22 @@ For more details, visit
 ## License
 
 This crate is a free software distributed under the [Apache 2.0 license](LICENSE).
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Boscop"><img src="https://avatars1.githubusercontent.com/u/535593?v=4" width="100px;" alt=""/><br /><sub><b>Boscop</b></sub></a><br /><a href="https://github.com/nodakai/rust-static_assert_macro/commits?author=Boscop" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
