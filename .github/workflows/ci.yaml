@@ -17,7 +17,7 @@ jobs:
           - stable
           - beta
           - nightly
-          - 1.31.0  # MSRV, just because of clippy for CI
+          - 1.37.0  # MSRV, just because of clippy for CI
 
     steps:
       - uses: actions/checkout@v2
